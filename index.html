@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Voucher - Alfalah Online Quran Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="voucher-container">
+    
+    <!-- Header -->
+    <header>
+      <img src="Alfalah log.jpg" alt="Academy Logo" class="logo">
+      <h1>Alfalah Online Quran Academy</h1>
+      <h2>Monthly Fee Voucher</h2>
+    </header>
+
+    <!-- Form -->
+    <form id="feeForm">
+      <label for="studentName">Student Name</label>
+      <input type="text" id="studentName" required>
+
+      <label for="class">Class</label>
+      <input type="text" id="class" required>
+
+      <label for="month">Month</label>
+      <input type="text" id="month" required>
+
+      <label for="dueDate">Due Date</label>
+      <input type="date" id="dueDate" required>
+
+      <label for="feeAmount">Fee Amount</label>
+      <input type="text" id="feeAmount" required>
+
+      <label for="accnmber">JazzCash Number / Bank Account Number</label>
+      <input type="text" id="feeAmount" required>
+    </form>
+
+    <!-- Payment Info -->
+    <div class="payment-info">
+      <p><strong>JazzCash Number:</strong> 0300-1234567</p>
+      <p><strong>Bank Account Number:</strong> 123456789012345</p>
+      <div class="pay">
+        <p style="color: #5a4634; font-weight:lighter;">"After payment take a screenshot of payment slip and send on whatsApp"</p>
+      </div>
+    </div>
+
+<div class="Important-info">
+      <p><strong style="color: rgb(117, 25, 25);">Important message:</strong> "A late payment penalty of Rs. 300 will be charged after the 12th date of a month."</p>
+      
+    </div>
+    
+    <!-- Buttons -->
+    <div class="buttons">
+      <button type="button" onclick="payFee()">Pay Fee</button>
+
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      ✅ Fees Paid <br> 
+      
+         <p>Take a screenshot for your record.</p>
+        <p>Send on whatsApp</p>
+      
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

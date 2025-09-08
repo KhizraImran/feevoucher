@@ -1,0 +1,276 @@
+/* General
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faf7f2;
+  color: #5a4634;
+  margin: 0;
+  padding: 0;
+}
+
+.voucher-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Header */
+/* header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Form */
+/* form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+} */
+
+/* Payment Info */
+/* .payment-info {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff4db;
+  border-left: 5px solid #c5a059;
+  font-weight: bold;
+}
+.Important-info{
+    margin-top: 20px;
+  padding: 5px;
+  background-color: #e78c8c;
+  border-left: 5px solid #c5a059;
+  font-weight: bold;
+  color: rgb(255, 41, 41);
+} */
+
+/* Buttons */
+/* .buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buttons button {
+  background-color: #c5a059;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+} */
+/* 
+.buttons button:hover { */
+  /* background-color: #a8853f;
+}
+
+/* Popup */
+/* .popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 300px;
+  margin: 100px auto;
+} * */
+
+/* -------------------
+   Base Styles (jo tumne pehle banaye)
+------------------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faf7f2;
+  color: #5a4634;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  max-width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.payment-info{
+    margin-top: 20px;
+  padding: 5px;
+  background-color: #fff4db;
+  border-left: 5px solid #c5a059;
+  font-weight: bold;
+}
+
+.Important-info{
+    margin-top: 20px;
+  padding: 5px;
+   /* background-color: rgb(206, 1, 1);  */
+  border: 3px solid #710505;
+  border-radius: 10px;
+  /* font-weight: bold; */
+  color: rgb(247, 6, 6);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #c5a059;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+ .popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 300px;
+  margin: 100px auto;
+} 
+
+/* -------------------
+   Responsive Styles
+------------------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    max-width: 60px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  header h2 {
+    font-size: 14px;
+  }
+
+  form input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .highlight {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
